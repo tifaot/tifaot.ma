@@ -194,7 +194,7 @@ header h3{
    
        text-align: center;
         padding: 20px 0;
-        background: linear-gradient(100deg, #16c3b2);
+        background: #16c3b2;
         color: white;
         margin-bottom: 30px;
         border-radius: 0 0 10px 10px;
@@ -395,7 +395,7 @@ header h3{
     .page-header {
         text-align: center;
         padding: 50px 0;
-        background: linear-gradient(100deg,  var(--secondary-color));
+        background: #16c3b2 ;
         color: white;
         margin-bottom: 40px;
         border-radius: 0 0 20px 20px;
