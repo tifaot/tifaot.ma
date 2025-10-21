@@ -65,3 +65,18 @@
             initGallery('gallery3');
             initGallery('gallery4');
         });
+
+// سياسة الحصوصية
+
+
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(acc => {
+    acc.querySelector('.accordion-header').addEventListener('click', () => {
+      const content = acc.querySelector('.accordion-content');
+      const isOpen = content.style.display === 'block';
+      // إغلاق كل الأقسام أولاً
+      document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+      // فتح القسم الحالي إذا كان مغلقًا
+      content.style.display = isOpen ? 'none' : 'block';
+    });
+  });
