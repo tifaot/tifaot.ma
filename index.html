@@ -6,6 +6,9 @@
     <title>الصفحة الرسمية لجمعية تيفاوت لثقافة والفنون والاعمال الاجتماعية</title>
     <link rel="shortcut icon" href="pho3.png" type="pho1/ipg">
     <link rel="stylesheet" href="styl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <script src="https://kit.fontawesome.com/9a5bab9c46.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -474,58 +477,7 @@
                             </main>   
                             
                             
-                            <main class="container">
-                                <!-- الفريق الإداري -->
-                                <section>
-                                  
-                                    <div class="team-container">
-                                        <!-- الرئيس -->
-                                        <div class="member-card">
-                                            
-                                            <div class="member-info">
-                                                <div class="rating">
-                                                    <span class="star" style="color: #ccc;" data-value="1">★</span>
-                                                    <span class="star" data-value="2">★</span>
-                                                    <span class="star" data-value="3">★</span>
-                                                    <span class="star" data-value="4">★</span>
-                                                    <span class="star"  data-value="5">★</span>
-                                                  </div>
-                                                <h3 class="member-name" id="sty21"><img src="user-2.png" alt=""></h3>
-                                                <p class="member-contact" style="text-decoration: none;">Mike Smith</p>
-                                            </div>
-                                        </div>
-    
-                                        <div class="member-card">
-                                            
-                                            <div class="member-info">
-                                                <div class="rating">
-                                                    <span class="star" data-value="1">★</span>
-                                                    <span class="star" data-value="2">★</span>
-                                                    <span class="star" data-value="3">★</span>
-                                                    <span class="star" data-value="4">★</span>
-                                                    <span class="star" data-value="5">★</span>
-                                                  </div>
-                                                <h3 class="member-name" id="sty20"><img src="user-1.png" alt=""></h3>
-                                                <p class="member-contact" style="text-decoration: none;">Sean Parker</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="member-card">
-                                            
-                                            <div class="member-info">
-                                                <div class="rating">
-                                                    <span class="star" style="color: #ccc;" data-value="1">★</span>
-                                                    <span class="star" style="color: #ccc;" data-value="2">★</span>
-                                                    <span class="star" data-value="3">★</span>
-                                                    <span class="star" data-value="4">★</span>
-                                                    <span class="star" data-value="5">★</span>
-                                                  </div>
-                                                <h3 class="member-name" id="sty22"><img src="user-3.png" alt=""></h3>
-                                                <p class="member-contact" style="text-decoration: none;">Mabel Joe</p>
-                                            </div>
-                                        </div>
-                                </section>    
-                                </main>    
+  
 
 
                               
@@ -637,13 +589,60 @@
   </div>
   <div class="accordion-content">
     <p>لأي استفسار عن سياسة الخصوصية، يمكنك التواصل معنا عبر البريد الإلكتروني:  
-    <a href="mailto:info@example.org">associationtifaoutbu@gmail.com</a></p>
+    <a href="associationtifaoutbu@gmail.com">associationtifaoutbu@gmail.com</a></p>
   </div>
 </div>
 
 
 
 </main>
+
+
+  <!-- comment -->
+   <div class="rating-section">
+  <!-- هنا ضع الكود الخاص بالتقييم بالكامل -->
+
+<div class="container">
+  <h2>⭐ تقييم الجمعية⭐</h2>
+  <div class="feedback-note">رأيك يهمنا! 🌟 شاركنا رايك لتعزيز تجربتك وتحسين الموقع.</div>
+  <div class="stars" id="stars">
+    <span data-value="1"><i class="fa-solid fa-star"></i></span>
+    <span data-value="2"><i class="fa-solid fa-star"></i></span>
+    <span data-value="3"><i class="fa-solid fa-star"></i></span>
+    <span data-value="4"><i class="fa-solid fa-star"></i></span>
+    <span data-value="5"><i class="fa-solid fa-star"></i></span>
+  </div>
+  <input type="text" id="username" placeholder="اسمك (اختياري)">
+  <textarea id="comment" rows="3" placeholder="اكتب رأيك هنا..."></textarea>
+  <button id="submit">إرسال التقييم</button>
+  <div class="avg" id="avgDisplay">⭐ متوسط التقييم: -</div>
+  <div class="chart">
+    <div class="bar"><div class="bar-fill" id="bar-5"></div><span class="bar-label">5 نجوم</span></div>
+    <div class="bar"><div class="bar-fill" id="bar-4"></div><span class="bar-label">4 نجوم</span></div>
+    <div class="bar"><div class="bar-fill" id="bar-3"></div><span class="bar-label">3 نجوم</span></div>
+    <div class="bar"><div class="bar-fill" id="bar-2"></div><span class="bar-label">2 نجوم</span></div>
+    <div class="bar"><div class="bar-fill" id="bar-1"></div><span class="bar-label">1 نجمة</span></div>
+  </div>
+  <div class="delete-message" id="deleteMessage">تم حذف التعليق بنجاح!</div>
+  <div class="reviews-section">
+    <h3><i class="fa-solid fa-comments"></i> آراء الزوار</h3>
+    <div id="reviewsList"></div>
+  </div>
+  <button id="adminLoginBtn">🔒 تسجيل دخول المسؤول</button>
+</div>
+
+<div class="admin-section" id="adminSection">
+  <h2>⚡ إدارة التعليقات</h2>
+  <div id="adminReviewsList"></div>
+  <button id="adminLogoutBtn">🚪 تسجيل خروج المسؤول</button>
+</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+
+
 
         
      <!-- Footer -->
@@ -708,6 +707,9 @@
     <p> تحديث يوم:21\10\25.</p>
     
   </div>
+
+
+
 </footer>
 
 <script src="script.js"></script>

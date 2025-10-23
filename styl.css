@@ -806,6 +806,169 @@ header h3{
   color: #ffdd57;
 }
 
+
+/* comment*/
+
+/* 🎯 تصميم مخصص فقط لمنطقة التقييم — معزول بالكامل عن باقي الصفحة */
+.rating-section {
+  font-family: "Cairo", sans-serif;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  width: 100%;
+  max-width: 650px;
+  margin: 40px auto;
+  direction: rtl;
+}
+
+.rating-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+.rating-section p.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.rating-section .stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 36px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.rating-section .stars span {
+  color: #ccc;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.rating-section .stars span:hover {
+  transform: scale(1.15);
+}
+
+.rating-section .stars span.active {
+  color: #ffc107;
+}
+
+.rating-section input,
+.rating-section textarea,
+.rating-section button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.rating-section textarea {
+  resize: vertical;
+}
+
+.rating-section button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.rating-section button:hover {
+  background: #218838;
+  transform: scale(1.02);
+}
+
+.rating-section .avg {
+  margin: 10px 0 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.rating-section .chart {
+  margin: 15px 0;
+}
+
+.rating-section .bar {
+  background: #eee;
+  border-radius: 8px;
+  margin: 6px 0;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+}
+
+.rating-section .bar-fill {
+  background: linear-gradient(90deg, #ffc107, #ff9800);
+  height: 100%;
+  width: 0%;
+  border-radius: 8px;
+  transition: width 0.6s ease;
+}
+
+.rating-section .bar-label {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  color: #333;
+  font-size: 13px;
+}
+
+.rating-section .review {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 8px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.rating-section .review img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.rating-section .review-content h4 {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.rating-section .review-content p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.rating-section small {
+  color: #999;
+  font-size: 12px;
+}
+
+/* 📱 تحسين للموبايل */
+@media (max-width: 600px) {
+  .rating-section {
+    padding: 20px;
+  }
+
+  .rating-section .stars {
+    font-size: 30px;
+  }
+}
+
+
 /* Footer Bottom */
 .footer-bottom {
   text-align: center;
